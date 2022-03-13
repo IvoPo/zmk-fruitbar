@@ -1,0 +1,12 @@
+file_format: "1"
+id: fruitbar
+name: Fruitbar
+type: shield
+url: https://github.com/blewis308/Fruitbar
+requires: [pro_micro]
+exposes: [i2c_oled]
+features:
+  - keys
+  - display
+  - encoder
+  - underglow
