@@ -22,11 +22,13 @@
 
 		num_layer {
 			bindings = <
-				&kp GRAVE  	&kp N1 		&kp N2  	&kp N3 		&kp N4 		&kp N5 		&kp N6 		&kp N7 		&kp N8 		&kp N9 		&kp N0 		&kp MINUS 	&kp EQUAL 	&kp BSPC    		&bt BT_CLR 	&bootloader
+				&kp GRAVE  	&kp N1 		&kp N2  	&kp N3 		&kp N4 		&kp N5 		&kp N6 		&kp N7 		&kp N8 		&kp N9 		&kp N0 		&kp MINUS 	&kp EQUAL 	&kp BSPC			&bt BT_CLR 	&bootloader
 				&kp TILDE 	&kp TILDE 	&kp EXCL  	&kp AT  	&kp HASH 	&kp DLLR 	&kp PRCNT 	&kp CARET 	&kp AMPS 	&kp STAR  	&kp LPAR  	&kp  RPAR 	&kp GRAVE 	&trans
 				&trans 		&trans 		&trans 		&trans	 	&trans 		&trans 		&trans 		&trans 		&trans 		&trans 		&trans 		&trans                                      &bt BT_CLR
-				&trans 		&trans 		&trans 					&trans 		&trans 		&trans 					&trans    	&trans 		&trans                                    &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2
+				&trans 		&trans 		&trans 					&trans 		&rgb_ug RGB_TOG 		&trans 					&trans    	&trans 		&rgb_ug RGB_EFF				   &bt BT_SEL 0	&bt BT_SEL 1 &bt BT_SEL 2
 			>;
+
+			sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
 		};
 	};
 };
